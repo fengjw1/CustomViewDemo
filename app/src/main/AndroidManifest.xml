@@ -33,6 +33,8 @@
         </activity>
         <activity android:name=".ui.ArcActivity">
         </activity>
+        <activity android:name=".ui.PieChartActivity">
+        </activity>
     </application>
 
 </manifest>

@@ -53,4 +53,11 @@
         android:layout_height="wrap_content"
         android:text="Arc"
         android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/piechart_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PieChart"
+        android:textAllCaps="false"/>
 </LinearLayout>

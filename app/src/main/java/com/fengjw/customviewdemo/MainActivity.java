@@ -10,6 +10,7 @@ import com.fengjw.customviewdemo.ui.ArcActivity;
 import com.fengjw.customviewdemo.ui.CircleActivity;
 import com.fengjw.customviewdemo.ui.LineActivity;
 import com.fengjw.customviewdemo.ui.OvalActivity;
+import com.fengjw.customviewdemo.ui.PieChartActivity;
 import com.fengjw.customviewdemo.ui.PointActivity;
 import com.fengjw.customviewdemo.ui.RectActivity;
 import com.fengjw.customviewdemo.ui.RoundRectActivity;
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button mBtnOval;
     private Button mBtnCircle;
     private Button mBtnArc;
+    private Button mBtnPiechart;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,6 +61,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mBtnCircle.setOnClickListener(this);
         mBtnArc = (Button) findViewById(R.id.Arc_btn);
         mBtnArc.setOnClickListener(this);
+        mBtnPiechart = (Button) findViewById(R.id.piechart_btn);
+        mBtnPiechart.setOnClickListener(this);
     }
 
     @Override
@@ -92,6 +96,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.Arc_btn:// TODO 18/12/10
                 intent = new Intent(this, ArcActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.piechart_btn:// TODO 18/12/11
+                intent = new Intent(this, PieChartActivity.class);
                 startActivity(intent);
                 break;
             default:
