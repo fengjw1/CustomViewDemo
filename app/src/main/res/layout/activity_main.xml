@@ -60,4 +60,18 @@
         android:layout_height="wrap_content"
         android:text="PieChart"
         android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/canvasoperation_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CanvasOperation"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/checkview_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CheckView"
+        android:textAllCaps="false"/>
 </LinearLayout>

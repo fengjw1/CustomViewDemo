@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 
 import com.fengjw.customviewdemo.ui.ArcActivity;
+import com.fengjw.customviewdemo.ui.CanvasOperationActivity;
+import com.fengjw.customviewdemo.ui.CheckViewActivity;
 import com.fengjw.customviewdemo.ui.CircleActivity;
 import com.fengjw.customviewdemo.ui.LineActivity;
 import com.fengjw.customviewdemo.ui.OvalActivity;
@@ -25,6 +27,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button mBtnCircle;
     private Button mBtnArc;
     private Button mBtnPiechart;
+    private Button mBtnCanvasoperation;
+    private Button mBtnCheckview;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,6 +67,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mBtnArc.setOnClickListener(this);
         mBtnPiechart = (Button) findViewById(R.id.piechart_btn);
         mBtnPiechart.setOnClickListener(this);
+        mBtnCanvasoperation = (Button) findViewById(R.id.canvasoperation_btn);
+        mBtnCanvasoperation.setOnClickListener(this);
+        mBtnCheckview = (Button) findViewById(R.id.checkview_btn);
+        mBtnCheckview.setOnClickListener(this);
     }
 
     @Override
@@ -100,6 +108,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.piechart_btn:// TODO 18/12/11
                 intent = new Intent(this, PieChartActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.canvasoperation_btn:// TODO 18/12/11
+                intent = new Intent(this, CanvasOperationActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.checkview_btn:// TODO 18/12/11
+                intent = new Intent(this, CheckViewActivity.class);
                 startActivity(intent);
                 break;
             default:
