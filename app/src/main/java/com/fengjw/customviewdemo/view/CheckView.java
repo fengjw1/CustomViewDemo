@@ -4,7 +4,6 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
-import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Rect;
 import android.graphics.RectF;
@@ -25,11 +24,6 @@ public class CheckView extends View {
     private Context mContext;
     private int currentPage = -1;
     private int maxPage = 12;
-
-    private Bitmap mBitmap;
-
-    private int mWidth, mHeight;
-
     public Handler mHandler = new Handler() {
         @Override
         public void handleMessage(Message msg) {
@@ -46,6 +40,8 @@ public class CheckView extends View {
             }
         }
     };
+    private Bitmap mBitmap;
+    private int mWidth, mHeight;
 
     public CheckView(Context context) {
         super(context);
@@ -86,8 +82,8 @@ public class CheckView extends View {
     }
 
     private void initPaint() {
-        mPaint.setStyle(Paint.Style.STROKE);
-        mPaint.setColor(Color.BLACK);
+        mPaint.setStyle(Paint.Style.FILL);
+        mPaint.setColor(0xffFF5317);
         mPaint.setStrokeWidth(5f);
     }
 

@@ -41,6 +41,12 @@
         </activity>
         <activity android:name=".ui.CheckViewActivity">
         </activity>
+        <activity android:name=".ui.PathActivity">
+        </activity>
+        <activity android:name=".ui.BezierCurveActivity">
+        </activity>
+        <activity android:name=".ui.ThirdBezierCurveActivity">
+        </activity>
     </application>
 
 </manifest>

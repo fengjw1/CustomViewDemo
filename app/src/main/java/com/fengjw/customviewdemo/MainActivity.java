@@ -7,15 +7,18 @@ import android.view.View;
 import android.widget.Button;
 
 import com.fengjw.customviewdemo.ui.ArcActivity;
+import com.fengjw.customviewdemo.ui.BezierCurveActivity;
 import com.fengjw.customviewdemo.ui.CanvasOperationActivity;
 import com.fengjw.customviewdemo.ui.CheckViewActivity;
 import com.fengjw.customviewdemo.ui.CircleActivity;
 import com.fengjw.customviewdemo.ui.LineActivity;
 import com.fengjw.customviewdemo.ui.OvalActivity;
+import com.fengjw.customviewdemo.ui.PathActivity;
 import com.fengjw.customviewdemo.ui.PieChartActivity;
 import com.fengjw.customviewdemo.ui.PointActivity;
 import com.fengjw.customviewdemo.ui.RectActivity;
 import com.fengjw.customviewdemo.ui.RoundRectActivity;
+import com.fengjw.customviewdemo.ui.ThirdBezierCurveActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -29,6 +32,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button mBtnPiechart;
     private Button mBtnCanvasoperation;
     private Button mBtnCheckview;
+    private Button mBtnPath;
+    private Button mBtnBeziercurve;
+    private Button mBtnThreebeziercurve;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,6 +77,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mBtnCanvasoperation.setOnClickListener(this);
         mBtnCheckview = (Button) findViewById(R.id.checkview_btn);
         mBtnCheckview.setOnClickListener(this);
+        mBtnPath = (Button) findViewById(R.id.path_btn);
+        mBtnPath.setOnClickListener(this);
+        mBtnBeziercurve = (Button) findViewById(R.id.beziercurve_btn);
+        mBtnBeziercurve.setOnClickListener(this);
+        mBtnThreebeziercurve = (Button) findViewById(R.id.threebeziercurve_btn);
+        mBtnThreebeziercurve.setOnClickListener(this);
     }
 
     @Override
@@ -116,6 +128,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.checkview_btn:// TODO 18/12/11
                 intent = new Intent(this, CheckViewActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.path_btn:// TODO 18/12/12
+                intent = new Intent(this, PathActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.beziercurve_btn:// TODO 18/12/12
+                intent = new Intent(this, BezierCurveActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.threebeziercurve_btn:// TODO 18/12/12
+                intent = new Intent(this, ThirdBezierCurveActivity.class);
                 startActivity(intent);
                 break;
             default:

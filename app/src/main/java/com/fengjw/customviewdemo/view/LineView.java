@@ -8,7 +8,7 @@ import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.View;
 
-public class LineView  extends View {
+public class LineView extends View {
 
     private Paint mPaint = new Paint();
 
@@ -21,7 +21,7 @@ public class LineView  extends View {
         super(context, attrs);
     }
 
-    private void initPaint(){
+    private void initPaint() {
         mPaint.setStrokeWidth(5f);
         mPaint.setColor(Color.BLACK);
         mPaint.setStyle(Paint.Style.FILL);
@@ -30,12 +30,12 @@ public class LineView  extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        canvas.drawLine(200,200, 500, 500, mPaint);
+        canvas.drawLine(200, 200, 500, 500, mPaint);
         canvas.drawLines(new float[]{
-                200,200, 200, 500,
+                200, 200, 200, 500,
                 300, 300, 300, 500,
-                400,400, 400, 500,
-                200,500, 500, 500
+                400, 400, 400, 500,
+                200, 500, 500, 500
         }, mPaint);
     }
 }

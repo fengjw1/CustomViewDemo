@@ -22,7 +22,7 @@ public class OvalView extends View {
         initPaint();
     }
 
-    private void initPaint(){
+    private void initPaint() {
         mPaint.setStyle(Paint.Style.FILL);
         mPaint.setColor(Color.BLACK);
         mPaint.setStrokeWidth(5f);

@@ -22,7 +22,7 @@ public class PointView extends View {
         initPaint();
     }
 
-    private void initPaint(){
+    private void initPaint() {
         mPaint.setColor(Color.BLACK);
         mPaint.setStyle(Paint.Style.FILL);
         mPaint.setStrokeWidth(10f);
@@ -31,9 +31,9 @@ public class PointView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        canvas.drawPoint(200,200, mPaint);
+        canvas.drawPoint(200, 200, mPaint);
         canvas.drawPoints(new float[]{
-              500, 500, 600, 600, 700, 700
+                500, 500, 600, 600, 700, 700
         }, mPaint);
     }
 }

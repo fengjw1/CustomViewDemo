@@ -23,7 +23,7 @@ public class RectView extends View {
         initPaint();
     }
 
-    private void initPaint(){
+    private void initPaint() {
         mPaint.setStyle(Paint.Style.FILL);
         mPaint.setStrokeWidth(5f);
         mPaint.setColor(Color.BLACK);

@@ -4,7 +4,6 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
-import android.graphics.Rect;
 import android.graphics.RectF;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
@@ -23,7 +22,7 @@ public class ArcView extends View {
         super(context, attrs);
     }
 
-    private void initPaint(){
+    private void initPaint() {
         mPaint.setColor(Color.BLACK);
         mPaint.setStrokeWidth(5f);
         mPaint.setStyle(Paint.Style.STROKE);

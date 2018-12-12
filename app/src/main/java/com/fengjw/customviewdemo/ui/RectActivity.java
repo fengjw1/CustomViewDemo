@@ -1,9 +1,8 @@
 package com.fengjw.customviewdemo.ui;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
-import com.fengjw.customviewdemo.R;
 import com.fengjw.customviewdemo.view.RectView;
 
 public class RectActivity extends AppCompatActivity {

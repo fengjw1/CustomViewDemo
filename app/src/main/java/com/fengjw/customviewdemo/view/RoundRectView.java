@@ -4,7 +4,6 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
-import android.graphics.Rect;
 import android.graphics.RectF;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
@@ -23,7 +22,7 @@ public class RoundRectView extends View {
         initPaint();
     }
 
-    private void initPaint(){
+    private void initPaint() {
         mPaint.setColor(Color.BLACK);
         mPaint.setStrokeWidth(5f);
         mPaint.setStyle(Paint.Style.FILL);
@@ -32,7 +31,7 @@ public class RoundRectView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        canvas.drawRoundRect(200,200, 500, 500, 30, 30, mPaint);
+        canvas.drawRoundRect(200, 200, 500, 500, 30, 30, mPaint);
 
         RectF rectF = new RectF(300, 600, 600, 1200);
         canvas.drawRoundRect(rectF, 150, 300, mPaint);//    x/2; y/2

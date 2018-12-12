@@ -1,77 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/point_btn"
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Point"
-        android:textAllCaps="false"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/line_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Line"
-        android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/point_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Point"
+            android:textAllCaps="false"/>
 
-    <Button
-        android:id="@+id/rect_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Rect"
-        android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/line_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Line"
+            android:textAllCaps="false"/>
 
-    <Button
-        android:id="@+id/rountrect_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="RoundRect"
-        android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/rect_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rect"
+            android:textAllCaps="false"/>
 
-    <Button
-        android:id="@+id/oval_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Oval"
-        android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/rountrect_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RoundRect"
+            android:textAllCaps="false"/>
 
-    <Button
-        android:id="@+id/circle_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Circle"
-        android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/oval_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Oval"
+            android:textAllCaps="false"/>
 
-    <Button
-        android:id="@+id/Arc_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Arc"
-        android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/circle_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Circle"
+            android:textAllCaps="false"/>
 
-    <Button
-        android:id="@+id/piechart_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="PieChart"
-        android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/Arc_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Arc"
+            android:textAllCaps="false"/>
 
-    <Button
-        android:id="@+id/canvasoperation_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="CanvasOperation"
-        android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/piechart_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PieChart"
+            android:textAllCaps="false"/>
 
-    <Button
-        android:id="@+id/checkview_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="CheckView"
-        android:textAllCaps="false"/>
-</LinearLayout>
+        <Button
+            android:id="@+id/canvasoperation_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CanvasOperation"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/checkview_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CheckView"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/path_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PathView"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/beziercurve_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BezierCurve"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/threebeziercurve_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ThreeBezierCurve"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+</ScrollView>
