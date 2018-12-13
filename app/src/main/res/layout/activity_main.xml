@@ -100,5 +100,12 @@
             android:layout_height="wrap_content"
             android:text="ThreeBezierCurve"
             android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/heart_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HeartView"
+            android:textAllCaps="false"/>
     </LinearLayout>
 </ScrollView>

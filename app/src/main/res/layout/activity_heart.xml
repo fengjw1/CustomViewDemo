@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.fengjw.customviewdemo.view.HeartView
+        android:id="@+id/heart_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"/>
+
+    <Button
+        android:id="@+id/heart_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="HeartCheck"/>
+</LinearLayout>

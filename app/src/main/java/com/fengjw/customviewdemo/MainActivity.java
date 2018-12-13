@@ -11,6 +11,7 @@ import com.fengjw.customviewdemo.ui.BezierCurveActivity;
 import com.fengjw.customviewdemo.ui.CanvasOperationActivity;
 import com.fengjw.customviewdemo.ui.CheckViewActivity;
 import com.fengjw.customviewdemo.ui.CircleActivity;
+import com.fengjw.customviewdemo.ui.HeartActivity;
 import com.fengjw.customviewdemo.ui.LineActivity;
 import com.fengjw.customviewdemo.ui.OvalActivity;
 import com.fengjw.customviewdemo.ui.PathActivity;
@@ -35,6 +36,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button mBtnPath;
     private Button mBtnBeziercurve;
     private Button mBtnThreebeziercurve;
+    private Button mBtnHeart;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -83,6 +85,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mBtnBeziercurve.setOnClickListener(this);
         mBtnThreebeziercurve = (Button) findViewById(R.id.threebeziercurve_btn);
         mBtnThreebeziercurve.setOnClickListener(this);
+        mBtnHeart = (Button) findViewById(R.id.heart_btn);
+        mBtnHeart.setOnClickListener(this);
     }
 
     @Override
@@ -140,6 +144,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.threebeziercurve_btn:// TODO 18/12/12
                 intent = new Intent(this, ThirdBezierCurveActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.heart_btn:// TODO 18/12/13
+                intent = new Intent(this, HeartActivity.class);
                 startActivity(intent);
                 break;
             default:
