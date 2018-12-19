@@ -107,5 +107,12 @@
             android:layout_height="wrap_content"
             android:text="HeartView"
             android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/arrawcircle_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ArrowCircle"
+            android:textAllCaps="false"/>
     </LinearLayout>
 </ScrollView>

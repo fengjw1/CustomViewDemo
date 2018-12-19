@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.fengjw.customviewdemo.ui.ArcActivity;
+import com.fengjw.customviewdemo.ui.ArrowCircleActivity;
 import com.fengjw.customviewdemo.ui.BezierCurveActivity;
 import com.fengjw.customviewdemo.ui.CanvasOperationActivity;
 import com.fengjw.customviewdemo.ui.CheckViewActivity;
@@ -37,6 +38,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button mBtnBeziercurve;
     private Button mBtnThreebeziercurve;
     private Button mBtnHeart;
+    private Button mBtnArrawcircle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -87,6 +89,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mBtnThreebeziercurve.setOnClickListener(this);
         mBtnHeart = (Button) findViewById(R.id.heart_btn);
         mBtnHeart.setOnClickListener(this);
+        mBtnArrawcircle = (Button) findViewById(R.id.arrawcircle_btn);
+        mBtnArrawcircle.setOnClickListener(this);
     }
 
     @Override
@@ -148,6 +152,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.heart_btn:// TODO 18/12/13
                 intent = new Intent(this, HeartActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.arrawcircle_btn:// TODO 18/12/18
+                intent = new Intent(this, ArrowCircleActivity.class);
                 startActivity(intent);
                 break;
             default:
