@@ -114,5 +114,12 @@
             android:layout_height="wrap_content"
             android:text="ArrowCircle"
             android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/searchview_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SearchView"
+            android:textAllCaps="false"/>
     </LinearLayout>
 </ScrollView>

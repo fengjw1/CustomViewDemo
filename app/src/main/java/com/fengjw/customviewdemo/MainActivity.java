@@ -20,6 +20,7 @@ import com.fengjw.customviewdemo.ui.PieChartActivity;
 import com.fengjw.customviewdemo.ui.PointActivity;
 import com.fengjw.customviewdemo.ui.RectActivity;
 import com.fengjw.customviewdemo.ui.RoundRectActivity;
+import com.fengjw.customviewdemo.ui.SearchActivity;
 import com.fengjw.customviewdemo.ui.ThirdBezierCurveActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -39,6 +40,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button mBtnThreebeziercurve;
     private Button mBtnHeart;
     private Button mBtnArrawcircle;
+    private Button mBtnSearchview;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -91,6 +93,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mBtnHeart.setOnClickListener(this);
         mBtnArrawcircle = (Button) findViewById(R.id.arrawcircle_btn);
         mBtnArrawcircle.setOnClickListener(this);
+        mBtnSearchview = (Button) findViewById(R.id.searchview_btn);
+        mBtnSearchview.setOnClickListener(this);
     }
 
     @Override
@@ -156,6 +160,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.arrawcircle_btn:// TODO 18/12/18
                 intent = new Intent(this, ArrowCircleActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.searchview_btn:// TODO 18/12/19
+                intent = new Intent(this, SearchActivity.class);
                 startActivity(intent);
                 break;
             default:
