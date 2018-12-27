@@ -157,6 +157,7 @@ public class SearchView extends View {
                 super.handleMessage(msg);
                 switch (mCurrentState) {
                     case NONE:
+                        Log.d("fengjw", "NONE");
                         count = 0;
                         mCurrentState = State.STATING;
                         mStartingAnimator.start();
@@ -181,6 +182,7 @@ public class SearchView extends View {
                         break;
                     case ENDING:
                         mCurrentState = State.NONE;
+                        mAnimatorHandler.sendEmptyMessage(0);
                         break;
                 }
             }
